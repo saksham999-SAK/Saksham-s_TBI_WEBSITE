@@ -1,0 +1,235 @@
+  body {
+      margin: 0;
+      font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+      background: #f0f2f5;
+    }
+.navbar {
+  width: 100%;
+  background-color: #0b3d91; 
+  padding: 15px 0;
+  text-align: center;
+}
+
+.navbar h1 {
+  color: white;
+  margin: 0;
+  font-size: 50px;
+  font-family: Arial, sans-serif;
+}
+
+
+
+.container {
+  display: flex;
+  height: 550px;
+  gap: 20px;
+  padding: 20px;
+}
+
+
+.left-section {
+  flex: 1;
+  background: linear-gradient(120deg, #f5f5f5, #e0e0e0);
+  display: flex;
+  flex-direction: column;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+  overflow: hidden;
+}
+
+
+.left-section .upper,
+.left-section .lower {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  justify-content: flex-start;
+  align-items: flex-start;
+  padding: 20px;
+
+  opacity: 0;
+  transform: translateY(20px);
+  animation: fadeInUp 1s forwards;
+  transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.left-section .lower {
+  animation-delay: 0.5s;
+}
+
+
+.left-section .upper:hover,
+.left-section .lower:hover {
+  transform: scale(1.02);
+  box-shadow: 0 8px 20px rgba(0,0,0,0.15);
+}
+
+@keyframes fadeInUp {
+  to {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+
+.left-section h1 {
+  margin-bottom: 10px;
+  color: #0b3d91;
+}
+
+.left-section p {
+  margin: 0;
+  max-width: 400px;
+  font-size: 16px;
+  line-height: 1.6;
+  color: #333;
+}
+
+
+.right-section {
+  flex: 1;
+  overflow: hidden;
+  border-radius: 12px;
+  box-shadow: 0 4px 10px rgba(0, 0, 0, 0.1);
+
+  transform: translateX(50px);
+  opacity: 0;
+  animation: slideIn 1s forwards;
+  animation-delay: 0.8s;
+  transition: transform 0.3s;
+}
+
+.right-section:hover {
+  transform: scale(1.02);
+}
+
+@keyframes slideIn {
+  to {
+    transform: translateX(0);
+    opacity: 1;
+  }
+}
+
+
+.right-section video {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  border-radius: 12px;
+  transition: transform 0.3s;
+}
+
+.right-section video:hover {
+  transform: scale(1.05);
+}
+
+
+@keyframes gradientShift {
+  0% { background-position: 0% 50%; }
+  50% { background-position: 100% 50%; }
+  100% { background-position: 0% 50%; }
+}
+
+.left-section {
+  background: linear-gradient(120deg, #f5f5f5, #e0e0e0, #f5f5f5);
+  background-size: 400% 400%;
+  animation: gradientShift 15s ease infinite;
+}
+
+.photo-container {
+  width: 98%;          
+  height: 600px;         
+  overflow: hidden;      
+  border-radius: 30px;  
+  padding:5px; 
+  
+}
+
+.photo-container img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;     
+  display: block;
+}
+
+ .footer {
+            background-color: #1b0000; 
+            color: white;
+            padding: 40px 20px;
+            text-align: center;
+        }
+
+        .footer h2 {
+            margin-bottom: 20px;
+        }
+
+        .contact-info {
+            margin-bottom: 20px;
+            line-height: 1.8;
+        }
+
+        .contact-info a {
+            color: white;
+            text-decoration: none;
+            margin-left: 5px;
+        }
+
+        .social-icons img {
+            width: 25px;
+            margin: 0 10px;
+            vertical-align: middle;
+        }
+
+        .quick-links {
+            margin-top: 20px;
+        }
+
+        .quick-links a {
+            color: white;
+            text-decoration: none;
+            margin: 0 10px;
+        }
+
+        .slogan {
+            margin: 20px 0;
+            font-style: italic;
+        }
+
+
+
+
+        .masonry {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr); 
+    gap: 15px;
+    padding: 20px;
+}
+
+.card {
+    background: #fff;
+    border-radius: 30px;
+    overflow: hidden;
+    text-decoration: none;
+    height: 500px; 
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    transition: transform 0.3s, box-shadow 0.3s;
+}
+
+.card img {
+    width: 100%;
+    height: 100%;
+    object-fit: cover; 
+}
+
+.card:hover {
+    transform: translateY(-5px);
+    box-shadow: 0 10px 20px rgba(0,0,0,0.2);
+}
+
+   
+    
+
+
+  
